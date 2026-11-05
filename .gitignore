@@ -1,0 +1,5 @@
+images/original/
+.claude/
+*.pdf
+canva-map.csv
+gemini_generated_video_*.mp4

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kapoor &amp; Iyer Estates | Luxury Homes in Mumbai</title>
+  <meta name="description" content="Kapoor & Iyer Estates — Mumbai's finest addresses, handled with quiet care. Sea-facing penthouses, heritage bungalows and weekend estates across Malabar Hill, Worli, Bandra, Juhu, Lower Parel and Alibaug.">
+  <meta name="theme-color" content="#1E1E1E">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kapoor & Iyer Estates | Luxury Homes in Mumbai">
+  <meta property="og:description" content="Mumbai's finest addresses, handled with quiet care.">
+  <meta property="og:image" content="images/og-image.webp">
+  <meta property="og:locale" content="en_IN">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/webp" href="images/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <link rel="stylesheet" href="css/style.css?v=4">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="Kapoor & Iyer Estates — home">
+        <span class="brand-mark"><img src="images/logo.webp" alt="Kapoor & Iyer Estates logo" class="brand-logo" width="44" height="44" data-logo></span>
+        <span class="brand-word">
+          <span class="brand-name">KAPOOR &amp; IYER</span>
+          <span class="brand-line" aria-hidden="true"></span>
+          <span class="brand-sub">ESTATES</span>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#properties">Properties</a></li>
+          <li><a href="#neighbourhoods">Neighbourhoods</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#journal">Journal</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="#contact" class="btn btn-outline-gold header-cta">Book a Private Viewing</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Mobile">
+      <ul>
+        <li><a href="#properties">Properties</a></li>
+        <li><a href="#neighbourhoods">Neighbourhoods</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#journal">Journal</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="btn btn-gold">Book a Private Viewing</a>
+    <p class="mobile-menu-foot">12th Floor, Altamount Road, Mumbai 400026</p>
+  </div>
+
+  <main id="main">
+    <section class="hero" id="top" aria-label="Introduction">
+      <div class="hero-media">
+        <img src="images/hero.webp" alt="" class="hero-fallback" aria-hidden="true">
+        <video class="hero-video" id="heroVideo" autoplay muted loop playsinline preload="auto" poster="images/hero.webp" aria-hidden="true">
+          <source src="images/hero.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-shimmer" aria-hidden="true"></div>
+      <canvas class="hero-particles" id="heroParticles" aria-hidden="true"></canvas>
+      <div class="container hero-content">
+        <p class="eyebrow hero-eyebrow">Mumbai's finest addresses, handled with quiet care</p>
+        <h1 class="hero-title">Mumbai's Finest Addresses</h1>
+        <p class="hero-sub">Vikram Kapoor &amp; Ananya Iyer · Luxury Real Estate since 2008</p>
+        <div class="hero-actions">
+          <a href="#properties" class="btn btn-gold">View Properties</a>
+          <a href="#team" class="btn btn-outline-light">Meet the Team</a>
+        </div>
+      </div>
+      <a href="#trust" class="scroll-cue" aria-label="Scroll to next section">
+        <span class="scroll-cue-text">Scroll</span>
+        <span class="scroll-cue-line"></span>
+      </a>
+    </section>
+
+    <section class="trust" id="trust" aria-label="Our record">
+      <div class="container trust-grid">
+        <div class="stat reveal">
+          <p class="stat-value"><span class="stat-prefix">₹</span><span class="counter" data-target="4200" data-format="comma">0</span><span class="stat-suffix"> Cr+</span></p>
+          <p class="stat-label">Sold</p>
+        </div>
+        <div class="stat reveal">
+          <p class="stat-value"><span class="counter" data-target="18">0</span></p>
+          <p class="stat-label">Years</p>
+        </div>
+        <div class="stat reveal">
+          <p class="stat-value"><span class="counter" data-target="650">0</span><span class="stat-suffix">+</span></p>
+          <p class="stat-label">Families</p>
+        </div>
+        <div class="stat reveal">
+          <p class="stat-value"><span class="stat-prefix">Top </span><span class="counter" data-target="1">0</span><span class="stat-suffix">%</span></p>
+          <p class="stat-label">In Mumbai</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about" aria-labelledby="aboutTitle">
+      <div class="container about-grid">
+        <figure class="about-media reveal">
+          <img src="images/agents.webp" alt="Vikram Kapoor and Ananya Iyer, partners at Kapoor & Iyer Estates" loading="lazy" width="900" height="1100">
+          <figcaption class="about-badge"><span>Since</span><strong>2008</strong></figcaption>
+        </figure>
+        <div class="about-copy">
+          <p class="eyebrow reveal">The Partners</p>
+          <h2 class="section-title reveal" id="aboutTitle">Eighteen years of finding homes, quietly.</h2>
+          <p class="reveal">Kapoor &amp; Iyer was founded in 2008 on a simple belief: that the most important purchase of a family's life deserves patience, discretion and honest advice. We work with a small number of clients at a time, and most of our homes change hands without ever reaching a public listing.</p>
+          <p class="reveal">From heritage bungalows on Malabar Hill to weekend estates across the harbour in Alibaug, we know these neighbourhoods street by street, and the people who live in them.</p>
+          <div class="signatures reveal">
+            <div>
+              <p class="signature">Vikram Kapoor</p>
+              <p class="signature-role">Managing Partner</p>
+            </div>
+            <div>
+              <p class="signature">Ananya Iyer</p>
+              <p class="signature-role">Senior Partner</p>
+            </div>
+          </div>
+          <p class="rera reveal">MahaRERA A51800000000</p>
+          <a href="#team" class="btn btn-dark reveal">Our Story</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="properties section" id="properties" aria-labelledby="propTitle">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow reveal">Featured Properties</p>
+            <h2 class="section-title reveal" id="propTitle">A considered collection</h2>
+          </div>
+          <div class="filters reveal" role="group" aria-label="Filter properties">
+            <button class="chip is-active" data-filter="All" aria-pressed="true">All</button>
+            <button class="chip" data-filter="Sea View" aria-pressed="false">Sea View</button>
+            <button class="chip" data-filter="Bungalows" aria-pressed="false">Bungalows</button>
+            <button class="chip" data-filter="Weekend Homes" aria-pressed="false">Weekend Homes</button>
+          </div>
+        </div>
+        <div class="property-grid" id="propertyGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="neighbourhoods section" id="neighbourhoods" aria-labelledby="hoodTitle">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow reveal">Neighbourhoods</p>
+            <h2 class="section-title reveal" id="hoodTitle">Six addresses we know by heart</h2>
+          </div>
+          <div class="carousel-controls reveal">
+            <button class="icon-btn" id="hoodPrev" aria-label="Previous neighbourhood">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+            </button>
+            <button class="icon-btn" id="hoodNext" aria-label="Next neighbourhood">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="hood-track" id="hoodTrack" tabindex="0" aria-label="Neighbourhoods carousel"></div>
+    </section>
+
+    <section class="map-section section" id="map" aria-labelledby="mapTitle">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow reveal">On the Map</p>
+            <h2 class="section-title reveal" id="mapTitle">From the ridge to the sea</h2>
+          </div>
+          <p class="map-hint reveal">Click the map to enable scroll-zoom.</p>
+        </div>
+        <div class="map-layout reveal">
+          <ul class="map-list" id="mapList" aria-label="Property locations"></ul>
+          <div class="map-wrap">
+            <div id="leafletMap" class="leaflet-map" role="region" aria-label="Map of property locations in Mumbai"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lifestyle" id="lifestyle" aria-label="Our philosophy">
+      <div class="lifestyle-media" id="lifestyleMedia">
+        <img src="images/lifestyle-1.webp" alt="Evening light over a Mumbai sea-facing terrace" loading="lazy" class="lifestyle-img">
+        <video class="lifestyle-video" id="lifestyleVideo" muted loop playsinline preload="none" aria-hidden="true">
+          <source src="images/hero-alt.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="lifestyle-overlay" aria-hidden="true"></div>
+      <blockquote class="container lifestyle-quote reveal">
+        <p>“A home in Mumbai is not an address. It is a way of living.”</p>
+        <cite>— Kapoor &amp; Iyer Estates</cite>
+      </blockquote>
+    </section>
+
+    <section class="testimonials section" id="testimonials" aria-labelledby="testiTitle">
+      <div class="container testi-inner">
+        <p class="eyebrow reveal">Client Words</p>
+        <h2 class="section-title reveal" id="testiTitle">In their own words</h2>
+        <div class="testi-slider reveal" id="testiSlider" aria-roledescription="carousel">
+          <div class="testi-track" id="testiTrack"></div>
+          <div class="testi-nav">
+            <button class="icon-btn" id="testiPrev" aria-label="Previous testimonial">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+            </button>
+            <div class="testi-dots" id="testiDots" role="tablist" aria-label="Choose testimonial"></div>
+            <button class="icon-btn" id="testiNext" aria-label="Next testimonial">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+            </button>
+          </div>
+        </div>
+        <p class="demo-label">Sample reviews for demo</p>
+      </div>
+    </section>
+
+    <section class="team section" id="team" aria-labelledby="teamTitle">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow reveal">The Team</p>
+            <h2 class="section-title reveal" id="teamTitle">Four people, one standard of care</h2>
+          </div>
+        </div>
+        <div class="team-grid" id="teamGrid"></div>
+      </div>
+    </section>
+
+    <section class="journal section" id="journal" aria-labelledby="journalTitle">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow reveal">The Journal</p>
+            <h2 class="section-title reveal" id="journalTitle">Notes on living well in Mumbai</h2>
+          </div>
+        </div>
+        <div class="journal-grid" id="journalGrid"></div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact" aria-labelledby="contactTitle">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <p class="eyebrow reveal">Contact</p>
+          <h2 class="section-title reveal" id="contactTitle">Book a private viewing</h2>
+          <p class="reveal">Tell us a little about what you are looking for. A partner will call you back within one working day, always in confidence.</p>
+          <figure class="office-media reveal">
+            <img src="images/office.webp" alt="The Kapoor & Iyer Estates office on Altamount Road" loading="lazy" width="1200" height="900">
+          </figure>
+          <address class="office-address reveal">
+            <strong>Head Office</strong>
+            12th Floor, Altamount Road<br>Mumbai 400026<br>
+            <a href="mailto:hello@kapooriyer.in">hello@kapooriyer.in</a><br>
+            <a href="tel:+9198XXXXXXXX">+91 98XXX XXXXX</a>
+          </address>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <figure class="form-accent">
+            <img src="images/lifestyle-2.webp" alt="Candlelit dinner on a terrace overlooking the Mumbai skyline" loading="lazy" width="1680" height="944">
+          </figure>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="field">
+              <label for="fName">Name</label>
+              <input id="fName" name="name" type="text" autocomplete="name" required>
+              <p class="field-error" id="fNameErr"></p>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="fPhone">Phone</label>
+                <input id="fPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+                <p class="field-error" id="fPhoneErr"></p>
+              </div>
+              <div class="field">
+                <label for="fEmail">Email</label>
+                <input id="fEmail" name="email" type="email" autocomplete="email" required>
+                <p class="field-error" id="fEmailErr"></p>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="fInterest">Interested In</label>
+                <select id="fInterest" name="interest" required>
+                  <option value="">Select</option>
+                  <option>Buy</option>
+                  <option>Sell</option>
+                  <option>Rent</option>
+                  <option>NRI Investment</option>
+                </select>
+                <p class="field-error" id="fInterestErr"></p>
+              </div>
+              <div class="field">
+                <label for="fBudget">Budget</label>
+                <select id="fBudget" name="budget" required>
+                  <option value="">Select</option>
+                  <option>Under ₹10 Cr</option>
+                  <option>₹10–25 Cr</option>
+                  <option>₹25–50 Cr</option>
+                  <option>₹50 Cr+</option>
+                </select>
+                <p class="field-error" id="fBudgetErr"></p>
+              </div>
+            </div>
+            <div class="field">
+              <label for="fMessage">Message</label>
+              <textarea id="fMessage" name="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold btn-block">Send Enquiry</button>
+          </form>
+          <div class="form-success" id="formSuccess" hidden tabindex="-1">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/><path d="M14 25l7 7 13-15"/></svg>
+            <h3>Thank you.</h3>
+            <p>Your enquiry has reached us. A partner will be in touch within one working day.</p>
+            <button type="button" class="btn btn-outline-gold" id="formReset">Send another enquiry</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand brand-light" aria-label="Kapoor & Iyer Estates — back to top">
+          <span class="brand-mark"><img src="images/logo.webp" alt="Kapoor & Iyer Estates logo" class="brand-logo" width="44" height="44" loading="lazy" data-logo></span>
+          <span class="brand-word">
+            <span class="brand-name">KAPOOR &amp; IYER</span>
+            <span class="brand-line" aria-hidden="true"></span>
+            <span class="brand-sub">ESTATES</span>
+          </span>
+        </a>
+        <p>Mumbai's finest addresses, handled with quiet care, since 2008.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram" class="social">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" class="fill"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn" class="social">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 014 0v4M12 10v7"/></svg>
+          </a>
+          <a href="#" aria-label="YouTube" class="social">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="M10 9l5 3-5 3z" class="fill"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h3 class="footer-head">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#properties">Properties</a></li>
+          <li><a href="#neighbourhoods">Neighbourhoods</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#journal">Journal</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-head">Areas</h3>
+        <ul class="footer-links">
+          <li>Malabar Hill</li>
+          <li>Worli</li>
+          <li>Bandra West</li>
+          <li>Juhu</li>
+          <li>Lower Parel</li>
+          <li>Alibaug</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="footer-head">Visit</h3>
+        <address class="footer-address">
+          12th Floor, Altamount Road<br>Mumbai 400026<br>
+          <a href="mailto:hello@kapooriyer.in">hello@kapooriyer.in</a><br>
+          <a href="tel:+9198XXXXXXXX">+91 98XXX XXXXX</a>
+        </address>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year">2026</span> Kapoor &amp; Iyer Estates. MahaRERA A51800000000.</p>
+      <p>Concept demo — fictional brand. Designed by PN Digital.</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="propertyModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="document">
+      <button class="modal-close" data-close aria-label="Close property details">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <div class="modal-gallery">
+        <div class="modal-main"><img id="modalMainImg" src="" alt=""></div>
+        <div class="modal-thumbs" id="modalThumbs"></div>
+      </div>
+      <div class="modal-body">
+        <p class="eyebrow" id="modalArea"></p>
+        <h2 class="modal-title" id="modalTitle"></h2>
+        <p class="modal-price" id="modalPrice"></p>
+        <p class="modal-specs" id="modalSpecs"></p>
+        <p class="modal-desc" id="modalDesc"></p>
+        <h3 class="modal-subhead">Amenities</h3>
+        <ul class="amenities" id="modalAmenities"></ul>
+        <a href="#" class="btn btn-whatsapp btn-block" id="modalWhatsApp" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path class="fill" d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.7-1.3a.5.5 0 000-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.7 11.8 11.8 0 004.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 001.8-1.2 2.2 2.2 0 00.1-1.2c-.1-.1-.3-.2-.5-.3z"/></svg>
+          Enquire on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <a href="https://wa.me/916301521358?text=Hi%2C%20I%27m%20interested%20in%20a%20property." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+    <span class="whatsapp-pulse" aria-hidden="true"></span>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.3-.4.7-1.3a.5.5 0 000-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.7 11.8 11.8 0 004.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 001.8-1.2 2.2 2.2 0 00.1-1.2c-.1-.1-.3-.2-.5-.3z"/></svg>
+  </a>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 15l7-7 7 7"/></svg>
+  </button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="js/data.js?v=4"></script>
+  <script src="js/main.js?v=4"></script>
+</body>
+</html>
